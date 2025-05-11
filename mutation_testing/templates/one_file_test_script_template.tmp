@@ -1,0 +1,12 @@
+from mutation_testing.running_test_cases import UnittestRunner
+
+
+def get_dyn_test_result(test_file_path):
+    test_runner = UnittestRunner()
+    test_runner.create_test_suite(is_module=True, test_module_path=test_file_path)
+    test_runner.run_tests()
+    return test_runner.get_result()
+
+
+if __name__ == "__main__":
+    get_dyn_test_result("{test_file_path}")

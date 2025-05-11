@@ -1,0 +1,3 @@
+import pytest
+
+pytest.main(['-n', '{parallel_level}', '--import-mode=importlib'])

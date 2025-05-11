@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mutation_testing"
+version = "0.1.0"
+description = ""
+authors = ["python-mutation-testing"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+coverage = "^7.4.1"
+pytest = "^8.0.0"
+jinja2 = "^3.1.2"
+dynapyt = {git = "https://github.com/python-mutation-testing/DynaPyt", branch = "mutation"}
+pytest-xdist = "^3.6.1"
+astunparse = "^1.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+flame = 'mutation_testing.command_line_interface:main'
+
+[tool.mutmut]
+paths_to_mutate = [ "src/" ]
+tests_dir = [ "tests/" ]
