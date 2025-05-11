@@ -1,0 +1,16 @@
+project_id,project_name,project_link,commit_hash,flame_cmd
+1,blinker,https://github.com/pallets-eco/blinker,8dcfa1b1abf70297e5c0f1733735035e8c19fea3,flame -r . -i src -ss operator_random_threshold -to 10
+2,schedule,https://github.com/dbader/schedule,82a43db1b938d8fdf60103bd41f329e06c8d3651,flame -r . -i schedule -ss operator_random_threshold -to 10
+3,pyjwt,https://github.com/jpadilla/pyjwt,527fec277e8215a197f8facd3778b359043704ef,flame -r . -i jwt -ss operator_random_threshold
+4,pyquery,https://github.com/gawel/pyquery,60ea3abafdf3e9cddcc580b9f94197c6badab09b,flame -r . -i pyquery -ss operator_random_threshold -pl 1
+5,funcy,https://github.com/Suor/funcy,721cfe8189f3968621cd4aba7a85840e8040724e,flame -r . -i funcy -ss operator_random_threshold -to 10
+6,wtforms,https://github.com/pallets-eco/wtforms,992145fde4af3122131336b7f2fe2835335bdda9,flame -r . -i src -ss operator_random_threshold -to 10
+7,python-patterns,https://github.com/faif/python-patterns,81e78fe59496c38dec0547ca744c8b180bbbb8a2,flame -r . -i patterns -ss operator_random_threshold -to 10
+8,marshmallow,https://github.com/marshmallow-code/marshmallow,aaecd5b02dc46b068e30964edbfb8d91d1eab3db,flame -r . -i src -ss operator_random_threshold -to 10
+9,pyvips,https://github.com/libvips/pyvips,6c983c3fa9aeca8a7f705d5cdc28043d0a42e87f,flame -r . -i pyvips -ss operator_random_threshold -to 10
+10,structlog,https://github.com/hynek/structlog,812149f505d5658f14013fa5516fed8b9d201625,flame -r . -i src -ss operator_random_threshold -to 10
+11,flask,https://github.com/pallets/flask,d2030595dcdc8ca5701504f00255360fb12a3a2b,flame -r . -i src -ss operator_random_threshold -to 10
+12,graphene,https://github.com/graphql-python/graphene,221afaf4c441a5e88e039440808d4810d5f040e7,flame -r . -i graphene -ss operator_random_threshold -to 10 -p *tests*
+13,supervisor,https://github.com/Supervisor/supervisor,0e0d3ff14cb4f4b34d1c33cdb92d19a47f5f65bc,flame -i supervisor -r . -x supervisor/tests -ss operator_random_threshold -to 10
+14,django-rest-framework,https://github.com/encode/django-rest-framework,328591693d7a3e734ca5a740dddf85e11ccd208f,flame -r . -i rest_framework -ss operator_random_threshold -to 10
+15,praw,https://github.com/praw-dev/praw,987e45b284760738b0b8027153148945f9761b7d,flame -i praw -r . -ss operator_random_threshold -to 10
